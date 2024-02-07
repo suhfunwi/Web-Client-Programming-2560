@@ -1,0 +1,12 @@
+#real-alert{
+    color: crimson;
+}
+#test-only{
+    color: dodgerblue;
+}
+body{
+background-color: ghostwhite ;
+}
+.missile-link{
+    display: block;
+}

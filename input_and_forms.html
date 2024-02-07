@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Forms</title>
+</head>
+<body>
+<form>
+<label for="user-name">Enter your name:</label>
+<input id="user-name"  required type="text">
+<!--required tag is for input validation
+    if it is the wrong input,
+    then browser sends an error message when you try to submit-->
+
+<input type="number">
+<!--the most basic input
+    there are many different kinds of input like date, number, color etc
+    if no type is specified, default is single line text box
+    you can also set the value for certain inputs-->
+<textarea rows="10" cols="40">Default text here</textarea>
+<!--textarea for multi line input
+can be resized by the user, can also set a default size in html-->
+<label>How many?</label>
+<select>
+<!--input for multiple options-->
+    <option>one</option>
+    <option>two</option>
+    <option>three</option>
+    <option>four</option>
+</select>
+<br>
+<label>Delivery or Pickup?</label>
+<input name="delivery-method" type="radio" checked>Delivery
+<input name="delivery-method" type="radio">Pickup
+<!--radio input  for limited choices
+    To have an option deselect when you click a different one,
+    add a name and make sure it's the same for the options
+    to set a value for a checkbox, enter the boolean 'checked'-->
+<br>
+<label>Today or later?</label>
+<input id="delivery-today" name="delivery-time" type="radio">
+<label for="delivery-today">Today</label>
+<input id="delivery-later" name="delivery-time" type="radio">
+<label for="delivery-later">Later</label>
+<!--labels are visually like spans, and they can be
+    associated with an input and should have an id
+    if they are associated with an input to connect them to the radio buttons-->
+    <br>
+    <input type="checkbox" checked>
+    <input type="submit">
+</form>
+<!--form to associate all your inputs together,
+    and to add a submit button to send things to a server usually-->
+</body>
+</html>
